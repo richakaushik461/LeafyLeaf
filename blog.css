@@ -1,0 +1,467 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff; /* Ensure header has a background */
+  padding-bottom: 20px;  /* Adds space below the header */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);  /* Faint line */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Optional: subtle shadow */
+}
+
+#logo{
+width:150px;
+height:auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+.nav_logo {
+  padding: 10px 0;
+}
+.menu_items {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: Poppins;
+}
+
+.menu_items .nav_link {
+  color: #000;
+  font-family: Poppins;
+  padding: 5px 10px;
+  border-radius: 100px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu_items .nav_link:hover {
+  background-color: #b2cf6d;  /* Background highlight */
+  color: #000;                 /* Keep text black */
+  font-family: Poppins;
+}
+#svg {
+  width: 30px;          /* Adjust width as needed */
+  height: auto;         /* Maintain aspect ratio */
+  fill: #fff;           /* Optional: Change fill color to match theme */
+  margin-right: 10px;   /* Optional: Spacing if next to text */
+  transition: transform 0.3s ease;  /* Optional: Smooth scaling */
+}
+
+#svg:hover {
+  transform: scale(1.1);  /* Optional: Slight zoom on hover */
+}
+
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  z-index: 1001;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+
+.show {
+  display: block;
+}
+
+
+footer{
+  background-color: #111;
+}
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px ;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0,9;
+}
+
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+.footerBottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+.socialIcons a {
+  display: inline-flex;             /* Centers SVG inside the circle */
+  align-items: center;              /* Vertical center */
+  justify-content: center;          /* Horizontal center */
+  width: 40px;                      /* Circle size */
+  height: 40px;                     /* Circle size */
+  background-color: #fff;        /* Circle background color */
+  border-radius: 50%;               /* Makes the circle */
+  margin: 0 10px;                  /* Spacing between icons */
+  transition: transform 0.3s ease, background-color 0.3s ease;  /* Hover effects */
+}
+
+.socialIcons a:hover {
+  background-color: #fff;        /* Darker green on hover */
+  transform: scale(1.1);            /* Slight zoom effect on hover */
+}
+
+.socialIcons img {
+  width: 20px;                      /* Resize SVG icons */
+  height: 20px;                     /* Maintain aspect ratio */
+  transition: filter 0.3s ease;     /* Smooth hover effect */
+}
+
+.socialIcons a:hover img {
+  filter: brightness(1.2);          /* Brightens SVG on hover */
+}
+
+.spacer{
+height:150px;
+}
+/* Blog Listing */
+.blog-title {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #2c3e50;
+  font-size: 2.5rem;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-card h2 {
+  margin: 15px;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.author {
+  margin: 0 15px 15px;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.read-more {
+  display: inline-block;
+  margin: 15px;
+  margin-top: auto;
+  padding: 10px 20px;
+  color: #ffffff;
+  background: #588157;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.2s;
+  text-align: center;
+}
+
+.read-more:hover {
+  background: #3a5a40;
+}
+
+/* Blog Detail */
+.blog-post {
+  max-width: 800px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.blog-post img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.blog-post p {
+  color: #34495e;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Auth Popup Styles */
+.auth-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.popup-content h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.popup-content p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.popup-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.login-btn {
+  background-color: #3a5a40;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #9bba54;
+}
+
+.close-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.close-btn:hover {
+  background-color: #d0d0d0;
+}
+
+.filter-container {
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 0 40px;
+}
+
+.filter-form {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.category-select {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: 2px solid #3a5a40;
+  border-radius: 8px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  min-width: 200px;
+}
+
+.category-select:hover {
+  border-color: #9bba54;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-select:focus {
+  border-color: #9bba54;
+  box-shadow: 0 0 0 2px rgba(155, 186, 84, 0.2);
+}
+
+/* Auth Popup Styles */
+.auth-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.popup-content h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.popup-content p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.popup-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.login-btn {
+  background-color: #3a5a40;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #9bba54;
+}
+
+.close-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.close-btn:hover {
+  background-color: #d0d0d0;
+}
